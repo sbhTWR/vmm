@@ -32,7 +32,10 @@ int vmx_support(void) {
         return 0;
     }
 
-    /* unsigned int eax, ebx, ecx, edx;
+    /* Comment the code above, and uncomment the code below
+       to see how the alternate version of the code works */
+    /* 
+    unsigned int eax, ebx, ecx, edx;
     eax = 1;
     ecx = 0;
     asm volatile("cpuid"
