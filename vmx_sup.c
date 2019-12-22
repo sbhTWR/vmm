@@ -3,7 +3,7 @@
 int main() {
 	int get_vmx_support, vmx_bit;
     	__asm__("mov $1, %eax");
-		  __asm__("mov $0, %ecx");
+	__asm__("mov $0, %ecx");
     	__asm__("cpuid");
     	__asm__("mov %%ecx, %0\n\t":"=r" (get_vmx_support));
     	vmx_bit = (get_vmx_support >> 5) & 1;
